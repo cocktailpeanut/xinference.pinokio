@@ -1,0 +1,19 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "python -m venv env"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "env{{path.sep}}{{os.platform() === 'win32' ? 'Scripts' : 'bin'}}{{path.sep}}pip install xinference[all]"
+    }
+  }, {
+    "method": "notify",
+    "params": {
+      "html": "<b>Success!</b> Successfully installed Xinference. Let's launch the web ui!",
+      "href": "start.json"
+    }
+  }]
+}

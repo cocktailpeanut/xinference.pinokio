@@ -1,0 +1,8 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "env{{path.sep}}{{os.platform() === 'win32' ? 'Scripts' : 'bin'}}{{path.sep}}xinference"
+    }
+  }]
+}
