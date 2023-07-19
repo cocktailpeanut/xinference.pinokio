@@ -1,10 +1,12 @@
 module.exports = {
-  start: "start.json",
   update: async (kernel) => {
     return "update.json"
   },
   menu: [{
-    html: "Install",
+    html: '<i class="fa-solid fa-rocket"></i> Launch',
+    href: "start.json"
+  }, {
+    html: '<i class="fa-solid fa-microchip"></i> Install',
     href: "install.json"
   }]
 }
