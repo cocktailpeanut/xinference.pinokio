@@ -2,7 +2,7 @@
   "run": [{
     "method": "shell.run",
     "params": {
-      "message": "python3 -m venv env"
+      "message": "python -m venv env"
     }
   }, {
     "method": "shell.run",
