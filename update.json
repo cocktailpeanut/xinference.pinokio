@@ -1,0 +1,15 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "env{{path.sep}}{{os.platform() === 'win32' ? 'Scripts' : 'bin'}}{{path.sep}}pip install --upgrade xinference[all]"
+    }
+  }, {
+    "method": "notify",
+    "params": {
+      "html": "Update successful. Click to visit the terminal and restart",
+      "href": "start.json",
+      "type": "success"
+    }
+  }]
+}
