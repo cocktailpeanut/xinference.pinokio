@@ -1,6 +1,7 @@
 module.exports = {
   title: "Xorbits Inference",
   description: "LLM Web UI and API",
+  icon: "icon.png",
   update: async (kernel) => {
     return "update.json"
   },
